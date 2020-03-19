@@ -17,6 +17,7 @@ def speak(text):
     filename = str(r2)+"randomtext"+str(r1) +".mp3"
     tts.save(filename)
     playsound.playsound(filename)
+    os.remove(filename)
 
 
 def receive():
