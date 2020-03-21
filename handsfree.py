@@ -19,7 +19,6 @@ def speak(text):
     playsound.playsound(filename)
     os.remove(filename)
 
-
 def receive():
     """Handles receiving of messages."""
     while True:
@@ -70,8 +69,8 @@ send_button.pack()
 top.protocol("WM_DELETE_WINDOW", on_closing)
 
 #----Now comes the sockets part----
-HOST = input('Enter host: ')
-PORT = input('Enter port: ')
+HOST = '127.0.0.1'
+PORT = '33000'
 if not PORT:
     PORT = 33000
 else:
