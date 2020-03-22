@@ -8,8 +8,6 @@ import time
 import playsound
 import random
 
-import speech_recognition as sr
-
 def speak(text):
     tts = gTTS(text=text, lang='en',slow=False)
 
@@ -30,12 +28,6 @@ def receive():
             speak(msg)
         except OSError:  # Possibly client has left the chat.
             break
-
-def rec():
-    r = sr.Recognizer()
-    with sr.Microphone() as source:
-        audio = r.listen(source)
-    my_msg.set("" + r.recognize_google(audio))
 
 
 def send(event=None):  # event is passed by binders.
@@ -59,7 +51,7 @@ top.title("Chatter TTS")
 
 messages_frame = tkinter.Frame(top)
 my_msg = tkinter.StringVar()  # For the messages to be sent.
-
+my_msg.set("Type your messages here.")
 scrollbar = tkinter.Scrollbar(messages_frame)  # To navigate through past messages.
 # Following will contain the messages.
 msg_list = tkinter.Listbox(messages_frame, height=15, width=50, yscrollcommand=scrollbar.set)
@@ -71,10 +63,6 @@ messages_frame.pack()
 entry_field = tkinter.Entry(top, textvariable=my_msg)
 entry_field.bind("<Return>", send)
 entry_field.pack()
-
-rec_button = tkinter.Button(top, text="Record", command=rec)
-rec_button.pack()
-
 send_button = tkinter.Button(top, text="Send", command=send)
 send_button.pack()
 
