@@ -3,20 +3,20 @@ import os
 from tkinter import*
 root = Tk()
 
-
 def handsfree():
     os.system('py handsfree.py')
 
 def textonly():
     os.system('py textonly.py')
 
+def info():
+    os.system('python -m webbrowser -t "https://www.google.com"')
 
 root.geometry('500x500')
-root.title("Registration Form")
+root.title("TEXTAPHONE")
 label_0 = Label(root, text="Select Mode",width=20,font=("bold", 20))
 label_0.place(x=90,y=53)
-Button(root, text='handsfree',width=20,bg='brown',fg='white',command= handsfree).place(x=180,y=280)
-Button(root, text='Text Only',width=20,bg='brown',fg='white',command= textonly).place(x=180,y=320)
-# it is use for display the registration form on the window
+Button(root, text='HANDSFREE',height=10,width=20,bg='brown',fg='white',command= handsfree).place(x=180,y=150)
+Button(root, text='TEXT ONLY',height=10,width=20,bg='brown',fg='white',command= textonly).place(x=180,y=320)
+Button(root, text='Info',bg='brown',fg='white',command= info).place(x=450,y=450)
 root.mainloop()
-print("registration form  seccussfully created...")

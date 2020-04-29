@@ -11,7 +11,7 @@ def extract_features(word_list):
   return dict([(word, True) for word in word_list])
 
 input_reviews = []
-input_reviews.append(input())
+input_reviews.append(input("Enter Data"))
 
 for review in input_reviews:
     print("\nReview:", review)
