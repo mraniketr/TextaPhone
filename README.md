@@ -5,7 +5,7 @@ Tending to the issues of people with vocal, visual and hearing troubles through 
 # 1.1 (Creating a multiclass Sentiment Analysis)
 
 # 1.0 (Chat App using Sockets and Binary Sentiment Analysis)
-
+code - https://github.com/mraniketr/TextaPhone/releases/tag/1.0
 ![alt text](https://i.imgur.com/fB7O8XK.png)
 
 ![alt text](https://i.imgur.com/y2UMWTf.png)
