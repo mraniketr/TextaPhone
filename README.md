@@ -4,8 +4,9 @@ Tending to the issues of people with vocal, visual and hearing troubles through 
 
 
 # 1.2 ( Creating a web app with Flask )
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tJj1wcGDKeM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+![1.2](https://github.com/mraniketr/TextaPhone/blob/master/Media/Updates/vlcsnap-2020-10-12-12h39m54s812.png?raw=true)
 
+Watch video demo - https://youtu.be/tJj1wcGDKeM
 Src for chat app - https://github.com/nikhilkumarsingh/flask-chat-app
 
 # 1.1 (Creating a multiclass Sentiment Analysis)
