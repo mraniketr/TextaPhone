@@ -13,7 +13,7 @@ Src for chat app - https://github.com/nikhilkumarsingh/flask-chat-app
 
 # 1.1 (Creating a multiclass Sentiment Analysis)
 ![NLP OP](https://i.imgur.com/XeD2lNi.png)
-[NLP Emoji Notebook](https://github.com/mraniketr/DeepLearningProjects/blob/master/Sentiment_emoji_prediction2.ipynb)
+[NLP Emoji Notebook](https://github.com/mraniketr/DeepLearningProjects/blob/master/NLP/Sentiment_emoji_prediction2.ipynb)
 [Live Demo](https://emojipredictionaniket.herokuapp.com/)
 
 # 1.0 (Chat App using Sockets and Binary Sentiment Analysis)
