@@ -1,0 +1,199 @@
+
+
+@media (max-width:600px) {
+    body h1{
+        text-align: center;
+    }
+
+    .messages{
+        display: none;
+    }
+
+    #load_older_messages_btn{
+        display: none;
+    }
+    
+    #send{
+        display: none;
+    }
+
+    #message_input{
+        display: none;
+    }
+    .container {
+     display: flex;
+  }
+
+  #message_input_form{
+      display: flex;
+  }
+  .container2 {
+     display: flex;
+     flex-direction: column;
+  }
+     #increment {
+         background-color: #4CAF50;
+         border: none;
+         color: white;
+         padding: 28% 16% 28% 16%;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 34px;
+     } 
+ 
+     #decrement {
+         background-color: orange;
+         border: none;
+         color: white;
+         padding: 50% 9% 50% 9%;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 34px;
+     }
+
+     #rec {
+        background-color: #b10000;
+        border: none;
+        color: white;
+        padding: 28% 12% 28% 12%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 34px;
+    } 
+
+    #back {
+        background-color: rgb(74, 137, 209);
+        border: none;
+        color: white;
+        padding: 50% 15.25% 50% 15.25%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 34px;
+    }
+
+     
+ 
+ #enterroom {
+     background-color: #4babc4;
+     border: none;
+     color: white;
+     padding: 25% 39% 25% 39%;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 34px;
+ } 
+}
+
+
+
+
+
+/* PC Layout */
+@media (min-width:601px) {
+  
+    body h1{
+        text-align: center;
+    }
+    .messages{
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        padding: 10px;    }
+
+    #load_older_messages_btn{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-color: #c45f41; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 42%;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+
+    }
+    
+    #send{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-color: #3437ee; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 9px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+
+    #message_input{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 4px;
+    }
+
+  
+     #increment {
+      display: none;
+     } 
+ 
+     #decrement {
+     display: none;
+     }
+
+     #rec {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-color: #fc1e1e; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px  62px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    } 
+
+    #back {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.616), 0 6px 20px 0 rgba(0,0,0,0.19);
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 16px;
+        cursor: pointer;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+    }
+ 
+    .container2{
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        padding: 10px;    }
+    }
+ }
