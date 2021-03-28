@@ -6,16 +6,18 @@
     <!-- IOS -->
     <meta name="apple-mobile-web-app-capable" content="yes" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='indexstyle.css') }}">
+    {% if usermode == "text"  %}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='indexstyletext.css') }}">
+    {% else %}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='indexstyle.css') }}">
+    {% endif %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Chat App</title>
+    <title>Textaphone</title>
 </head>
 <body>
-<h1>My Chat App</h1>
+<h1>Textaphone</h1>
 <h3>Hi {% if current_user.is_authenticated %}{{ current_user.username }}{% else %}Guest{% endif %}!</h3>
 
 {% if current_user.is_authenticated %}
@@ -41,9 +43,13 @@
     
     </div>
         <div>
-            <button id="enterroom"onclick="enter()">Enter</button>
+            <button id="enterroom" onclick="enter()">Enter</button>
         </div>
 </div>
+<button id="createroom" onclick="location.href='/create-room'">Create Room</button>
+<br>
+<button id="createroom" onclick="location.href='/logout'">Logout</button>
+
 
 
 
@@ -93,6 +99,8 @@
 
     function enter()
     {
+        var msg1 = new SpeechSynthesisUtterance("You are now entering" + buttonname.name + "room");
+        window.speechSynthesis.speak(msg1);
         buttonname.click();
     }
        
