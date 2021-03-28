@@ -3,7 +3,8 @@ Tending to the issues of people with vocal, visual and hearing troubles through 
 
 
 # 1.3 ( Style all pages, Complete Mobile GUI )
-
+![image](https://user-images.githubusercontent.com/28819092/112742024-6bc0b080-8fa8-11eb-87fb-3f5f490d565c.png)
+![image](https://user-images.githubusercontent.com/28819092/112742026-71b69180-8fa8-11eb-8693-82e1422976ce.png)
 
 # 1.2 ( Creating a web app with Flask )
 ![1.2](https://github.com/mraniketr/TextaPhone/blob/master/Media/Updates/vlcsnap-2020-10-12-12h39m54s812.png?raw=true)
